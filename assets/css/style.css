@@ -200,7 +200,7 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
+  background: url(../img/bg.png) repeat;
   padding-left: 190px;
 }
 
@@ -559,7 +559,8 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  font-weight: bold;
+  background-color: #00807300 !important;
 }
 
 /* .teal {
