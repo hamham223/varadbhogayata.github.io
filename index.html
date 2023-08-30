@@ -479,10 +479,10 @@ of each drug container to estimate the degradation of the drug.
                 <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">(New!)MSD Recommendation<i
+                <span class="card-title activator teal-text hoverline"><span style="color: red;">(New!)</span>MSD Recommendation<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A recommendation system based on MSD (Million Song Dataset)
+                  A recommendation system on <a href="http://millionsongdataset.com/">Million Song Dataset</a>
                 </p>
               </div>
               <div class="card-reveal">
@@ -491,20 +491,24 @@ of each drug container to estimate the degradation of the drug.
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
-
+                  <li><b>Tools:</b> Hadoop, Spark, Avro, Drill, Scikit-learn, LaTeX</li>
+                  <li>Retrieve the dataset, interprete on the data structure and turn into avro file in parall.</li>
+                  <li>Use drill (sqlite) to perform basic queries on dataset.</li>
+                  <li>Use both Spark and Mapreduce to recommend the most similar song with diverse customization.</li>
+                  <li>Reduce data dimension by PCA and effectively predict the year of the songs.</li>
+                  <li>Demostrate our idea by well typed beamer slides and an A1 poster.</li>
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
+                  <a aria-label="Visit " href="https://raw.githubusercontent.com/hamham223/ECE4720J-SU23/main/project/5_demostration/slides/ECE472_Presentation_slide.pdf" target="_blank" data-position="top"
+                    data-tooltip="Download Slides"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
+                  <a aria-label="Visit " href="https://raw.githubusercontent.com/hamham223/ECE4720J-SU23/main/project/5_demostration/poster/poster.pdf" target="_blank" data-position="top"
+                  data-tooltip="Download Poster"
+                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                    class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for project" href="https://github.com/hamham223/ECE4720J-SU23/tree/main/project"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -519,10 +523,10 @@ of each drug container to estimate the degradation of the drug.
                 <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+                <span class="card-title activator teal-text hoverline">Multithreaded DB<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A quiz playing web app based on Django
+                  Multi-threading optimization for simple database queries.
                 </p>
               </div>
               <div class="card-reveal">
@@ -531,17 +535,20 @@ of each drug container to estimate the degradation of the drug.
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li>
+                  <li><b>Require:</b> C++17, Clang >= 6.0, CMake >= 2.7 </li>
+                  <li>Implement multi-thread in each single query to be 40% faster.</li>
+                  <li>Auto detect the optimized thread num based on table size</li>
+                  <li>Use <code>priority queue</code> with mutex to guarantee efficiency and sorting records</li>
 
                 </ul>
                 <div class="card-action">
+                  <!--
                   <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
+                  -->
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/hamham223/VE482-FA22/tree/main/p2"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -591,14 +598,14 @@ of each drug container to estimate the degradation of the drug.
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
+                <img alt="Screenshot of web app" src="/assets/img/shell-logo.jfif"
                 style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Blog Web-App<i
+                <span class="card-title activator teal-text hoverline">Shell based on C<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A simple and extensible blog web-app based on Flask.
+                  A simple shell (mumsh) implemented by system-level C.
                 </p>
               </div>
               <div class="card-reveal">
@@ -607,18 +614,16 @@ of each drug container to estimate the degradation of the drug.
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
-
+                  <li><b>Key Points:</b> system call, signal catching, pipe, built-in command.</li>
+                  <li>Support basic Unix commands w/o arguments, e.g. <code>ls -la</code>.</li>
+                  <li>Bash style file I/O redirection, e.g. <code>cat &lt;1.txt &gt; 2.txt</code>.</li>
+                  <li>Basic pipe, e.g. <code> echo 123 | grep 1 </code>.</li>
+                  <li>Catch interrupt signal including <code>CTRL-D</code> and <code>CTRL-C</code>.</li>
+                  <li>Implement shell built-in command <code>pwd</code> and <code>cd</code>.</li>
 
                 </ul>
                 <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/hamham223/VE482-FA22/tree/main/p1"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
@@ -628,6 +633,7 @@ of each drug container to estimate the degradation of the drug.
           </div>
 
           <!-- VQA -->
+          <!---
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -641,8 +647,8 @@ of each drug container to estimate the degradation of the drug.
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <!-- TODO: change this -- only close button 
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> 
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
@@ -664,7 +670,7 @@ of each drug container to estimate the degradation of the drug.
             </div>
           </div>
 
-          <!-- Video Summarizer -->
+          <!-- Video Summarizer 
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -678,8 +684,8 @@ of each drug container to estimate the degradation of the drug.
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <!-- TODO: change this -- only close button 
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> 
                 <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
@@ -690,7 +696,6 @@ of each drug container to estimate the degradation of the drug.
                     BLEU, METEOR evaluation metrics.</li>
 
                 </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
                 <div class="card-action">
                   <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
                     target="_blank" data-position="top" data-tooltip="View Source"
@@ -701,7 +706,7 @@ of each drug container to estimate the degradation of the drug.
             </div>
           </div>
 
-          <!-- Image Generator -->
+          <!-- Image Generator 
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -715,8 +720,6 @@ of each drug container to estimate the degradation of the drug.
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
@@ -736,7 +739,7 @@ of each drug container to estimate the degradation of the drug.
             </div>
           </div>
 
-          <!-- Head Counting System -->
+          <!-- Head Counting System 
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -750,8 +753,6 @@ of each drug container to estimate the degradation of the drug.
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
                 <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
@@ -770,6 +771,7 @@ of each drug container to estimate the degradation of the drug.
               </div>
             </div>
           </div>
+          -->
 
           <!-- ************* -->
         </div>
