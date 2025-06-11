@@ -314,9 +314,46 @@ h3 {
 
 /* Original */
 
+/*
 #intro.section {
   background: url(../img/hamster-start.jpg) no-repeat top center/cover;
   position: relative;
+}
+*/
+
+#intro.section {
+  position: relative;
+  height: 100vh; /* 确保有明确的高度 */
+  animation: slide 14s infinite steps(1);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(../img/hamster-start.jpg);
+  }
+  14% {
+    background-image: url(../img/hamster-second.jpg);
+  }
+  28% {
+    background-image: url(../img/hamster-third.jpeg);
+  }
+  42% {
+    background-image: url(../img/hamster-fourth.jpg);
+  }
+  57% {
+    background-image: url(../img/hamster-fifth.jpg);
+  }
+  71% {
+    background-image: url(../img/hamster-sixth.jpeg);
+  }
+  85% {
+    background-image: url(../img/hamster-seventh.jpeg);
+  }
+  100% {
+    background-image: url(../img/hamster-start.jpg);
+  }
 }
 
 /* #intro.section {
