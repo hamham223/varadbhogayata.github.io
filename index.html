@@ -1193,21 +1193,43 @@
 
 
   <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
 
   <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+
+
   <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    // 初始化Materialize组件
+    $(document).ready(function() {
+      $('.card').each(function() {
+        M.Card.init(this);
+      });
+    });
+    // Materialize卡片交互回退方案
+    document.addEventListener('DOMContentLoaded', function() {
+      // 如果Materialize未加载（国内环境可能发生）
+      if (typeof M === 'undefined') {
+        console.warn('Materialize未加载，使用备用交互方案');
+        
+        // 卡片的点击展开功能
+        document.querySelectorAll('.card .activator').forEach(activator => {
+          activator.addEventListener('click', function() {
+            const card = this.closest('.card');
+            const reveal = card.querySelector('.card-reveal');
+            reveal.classList.add('active');
+          });
+        });
+        
+        // 关闭按钮功能
+        document.querySelectorAll('.card-reveal .card-title i').forEach(closeBtn => {
+          closeBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.closest('.card-reveal').classList.remove('active');
+          });
+        });
+      }
+    });
   </script>
 </body>
 
