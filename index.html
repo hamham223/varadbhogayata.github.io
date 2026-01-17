@@ -160,7 +160,7 @@
         <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Hamster's resume in a new tab" href="/assets/resume/Yinchen_CV_Scholar_1_25.pdf" target="_blank"
+        <a aria-label="Open Hamster's resume in a new tab" href="/assets/resume/Yinchen_CV_Scholar_12_01.pdf" target="_blank"
         class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
       </li>
     </ul>
@@ -278,7 +278,7 @@
           </h2>
         </blockquote> -->        
         <p>
-          I am a First Year Master Student at University of Michigan - Shanghai Jiao Tong University Joint Institute. 
+          I am a Second Year Master Student at University of Michigan - Shanghai Jiao Tong University Joint Institute. 
           
           I enjoy problem-solving for the fields of time-critical computing and coding, of course! Always strive to bring 100% to the work I do.
 
@@ -394,6 +394,68 @@
       <div class="container">
 
         <!-- Latest Experience -->
+
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://sites.gc.sjtu.edu.cn/zouan/" target="_blank">
+                  <img alt="Efficient Computing Lab Logo" 
+                       src="/assets/img/lablogo.jpg" 
+                       class="responsive-img center-block" />
+                </a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title" style="font-size: 1.2rem; line-height: 1.3;">
+                    <a href="https://sites.gc.sjtu.edu.cn/zouan/" target="_blank" 
+                       class="teal-text hoverline">
+                      Efficient Computing Hardware and System Lab
+                    </a>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Research Assistant</div>
+
+            <ul>
+              <b>Real-Time System Scheduling for Heterogeneous Systems</b>
+              <li>
+                Developed scheduling frameworks for accelerator-enabled computing platforms [RTAS'25]
+              </li>
+              <li>
+                Investigating progress-aware real-time serving mechanisms [Under Review]
+              </li>
+            </ul>
+
+            <ul>
+              <b>Mathematical Timing Analysis for Real-Time Computing</b>
+              <li>
+                Proposed response-time analysis methods for parallel data copies [RTAS'25]
+              </li>
+              <li>
+                Working on improved analysis techniques for complex task models [Under Review]
+              </li>
+            </ul>
+
+            <ul>
+              <b>Time Critical Computing in Modern Operating Systems</b>
+              <li>
+                Built simulation tools for heterogeneous architecture scheduling [DATE'25]
+              </li>
+              <li>
+                Exploring latency-aware system optimization approaches [Under Review]
+              </li>
+            </ul>
+
+            <b>Areas:</b> Real-Time Systems · Heterogeneous Computing · Timing Analysis · System Simulation
+          </div>
+          <div class="card-action">
+            <span>Sep 2022 - Present | Shanghai, China</span>
+          </div>
+        </div>
+
+
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -442,7 +504,7 @@
             </ul>
           </div>
           <div class="card-action">
-            <span>Sept 2021 - Summer 2023 | Shanghai, China</span>
+            <span>Sept 2021 - Summer 2025 | Shanghai, China</span>
           </div>
         </div>
 
@@ -584,6 +646,70 @@
           <blockquote>Powered by Google Tag Manager: Click to show details</blockquote>
         </footer>
         <div class="row">
+        
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="RTHeter Simulator Interface" src="/assets/img/RTHeter-logo.png"
+                style="height: 100%; width: 100%" class="activator" />
+              </div>
+
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">
+                  <span style="color: red;">(New!)</span> <b>"RTHeter"</b> Simulator
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+                <p>
+                  <b>RTHeter</b>: A hierarchical simulator for <u>R</u>eal-<u>T</u>ime scheduling analysis on <u>Heter</u>ogeneous architectures.
+                </p>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title brown-text">Details<i class="mdi-navigation-close right"></i></span>
+                <span class="card-title teal-text"><small>Details</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <b>Key Features:</b>
+                  <li>🔧 Supports ideal/practical models of CPUs, accelerators, and data copy engines</li>
+                  <li>📊 Enables rapid evaluation of scheduling algorithms on customizable architectures</li>
+                  <li>🤖 Facilitates RL-based scheduler discovery and architectural bottleneck analysis</li>
+
+                  <b>Technical Stack:</b>
+                  <li>C++ 20 simulator kernel with Python frontend interface</li>
+                  <li>Support for DAG tasks, self-suspension models, and priority-based scheduling</li>
+                  <li>Configurable simulation granularity from tick-level to millisecond scale</li>
+
+                  <b>Awards:</b>
+                  <li>🥉 2025 ESWeek Embedded System Software Competition Second Runner-Up</li>
+                  <li>📜 Published at DATE 2025 Conference</li>
+
+                  <b>Applications:</b>
+                  <li>Pre-silicon verification of real-time heterogeneous SoCs</li>
+                  <li>Design space exploration for CPU/accelerator resource allocation</li>
+                  <li>Benchmarking and comparison of scheduling policies</li>
+                </ul>
+
+                <div class="card-action">
+                  <a aria-label="Visit the RTHeter simulator website" 
+                     href="https://computesimulator.com"
+                     target="_blank" 
+                     data-position="top" 
+                     data-tooltip="Visit Website"
+                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                  <a aria-label="Watch the demonstration videos" 
+                     href="https://computesimulator.com/demo-videos"
+                     target="_blank" 
+                     data-position="top" 
+                     data-tooltip="Watch Demo"
+                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                    <i class="fa fa-video-camera"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="col s12 m6 l4">
             <div class="card medium">
@@ -592,7 +718,7 @@
                 style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline"><span style="color: red;">(New!)</span> <b>"SAVE"</b> (Capstone Proj)<i
+                <span class="card-title activator teal-text hoverline"><b>"SAVE"</b> (Capstone Project)<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
                   <b>SAVE</b>: A Vision-Based Bicycle <u>S</u>afety System for <u>A</u>lerting Collision with <u>V</u>ehicl<u>e</u>s.
@@ -1124,8 +1250,9 @@
                 <p class="brown-text">Shanghai, China</p>
                 <p>
                   <b>Degree: </b>Master of Computer Science and Technology (in progress)
+                  <b>Thesis Proposal: </b>Real-Time Scheduling on Heterogeneous Computing Architectures
                   <br>
-                  <b>GPA: </b>3.92/4.0
+                  <b>GPA: </b>3.94/4.0
                 </p>
 
                 <ul>
@@ -1164,10 +1291,10 @@
               class="hoverline">niyinchen[at]sjtu[dot]edu[dot]cn</a></a>
         </p>
         <p>
-          <a aria-label="See Hamster's Teaching" href="hamham223.com/teaching" target="_blank"
+          <a aria-label="See Hamster's Teaching" href="https://hamham223.com/teaching" target="_blank"
             data-position="top" data-tooltip="See Hamster's Teaching"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-book"></i><a
-              aria-label="See Hamster's Teaching" href="hamham223.com/teaching" class="hoverline"
+              aria-label="See Hamster's Teaching" href="https://hamham223.com/teaching" class="hoverline"
               target="_blank">hamham223.com/teaching</a></a>
         </p>
         <p>
@@ -1194,7 +1321,7 @@
           <a aria-label="Contact Hamster via Twitter" href="https://twitter.com/hamsterLit" target="_blank"
             data-position="top" data-tooltip="Contact Hamster via Twitter"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-twitter"></i><a aria-label="Hamster on LinkedIn" href="https://twitter.com/hamsterLit"
+              class="fa fa-twitter"></i><a aria-label="Hamster on Twitter" href="https://twitter.com/hamsterLit"
               class="hoverline" target="_blank">@hamsterLit</a></a>
         </p>
       </div>
