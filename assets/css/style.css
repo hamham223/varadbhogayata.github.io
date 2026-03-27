@@ -58,6 +58,14 @@
   color: #0077b5;
 }
 
+.google {
+  color: #dc4337;
+}
+
+.twitter {
+  color: #179cf3;
+}
+
 .angellist {
   color: grey;
 }
@@ -70,6 +78,15 @@
 .linkedin:hover {
   background-color: #0077b5;
 }
+
+.google:hover {
+  background-color: #dc4337;
+}
+
+.twitter:hover {
+  background-color: #179cf3;
+}
+
 
 .angellist:hover {
   background-color: grey;
